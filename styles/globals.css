@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -29,4 +29,22 @@ a {
     color: white;
     background: black;
   }
-} */
+}
+
+#products {
+  background: linear-gradient(90deg, #6fc1f7, #ce5be7, #b07aec, #6fc1f7);
+  background-size: 800%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
